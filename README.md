@@ -1,4 +1,4 @@
-# 🍽️ Sistem Basis Data Restoran
+#  Sistem Basis Data Restoran
 # Mata Kuliah 
 Pemrograman Basis Data
 
