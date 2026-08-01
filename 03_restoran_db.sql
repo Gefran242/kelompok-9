@@ -63,3 +63,28 @@ BEGIN
 END$$
 DELIMITER ;
 
+--  Prosedur Tambah Pelanggan
+CREATE PROCEDURE sp_tambah_pelanggan (
+    IN p_nama VARCHAR(100),
+    IN p_nomor_meja INT,
+    IN p_no_telepon VARCHAR(15)
+)
+BEGIN
+    INSERT INTO pelanggan (nama_pelanggan, nomor_meja, no_telepon)
+    VALUES (p_nama, p_nomor_meja, p_no_telepon);
+END //
+
+--  Prosedur Tambah Menu
+CREATE PROCEDURE sp_tambah_menu (
+    IN p_id_kategori INT,
+    IN p_nama_menu VARCHAR(100),
+    IN p_harga DECIMAL(10,2),
+    IN p_stok INT
+)
+BEGIN
+    INSERT INTO menu (id_kategori, nama_menu, harga, stok)
+    VALUES (p_id_kategori, p_nama_menu, p_harga, p_stok);
+END //
+
+DELIMITER ;
+
